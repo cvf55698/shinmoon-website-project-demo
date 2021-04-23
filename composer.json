@@ -1,0 +1,36 @@
+{
+    "name": "syn/php-composer-site3",
+    "authors": [
+        {
+            "name": "cbgh88997",
+            "email": "cbgh55698@gmail.com"
+        }
+    ],
+    "require": {
+        "smarty/smarty": "^3.1",
+        "vlucas/phpdotenv": "^5.3",
+        "phpunit/phpunit": "^9.5",
+        "guzzlehttp/guzzle": "^7.3",
+        "phpmailer/phpmailer": "^6.4"
+    },
+	"autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        },
+		"files": [
+            "module/http_helpers.php",
+            "module/mail_helpers.php",
+            "module/curl_helpers.php",
+            "module/env_helpers.php",
+            "module/session_helpers.php",
+            "module/response_helpers.php",
+            "module/smarty_helpers.php",
+            "module/app_helpers.php",
+            "module/route_helpers.php",
+            "module/enviroment_helpers.php"
+		]
+    },
+    "scripts": {
+        "test": "php vendor/phpunit/phpunit/phpunit --debug"
+    }
+}

@@ -1,0 +1,92 @@
+
+#checkout-info-commit-table div.content-row{
+    position: relative;
+    height:40px;
+}
+
+#checkout-info-commit-table .info-th{
+    position: absolute;
+    left:10px;
+    top:2px;
+    height:20px;
+}
+#checkout-info-commit-table .info-td{
+    position: absolute;
+    left:180px;
+    top:2px;
+    height:20px;
+}
+
+#checkout-info-commit-table .info-td span{
+    position: relative;
+    top:6px;
+    font-size:16px;
+}
+#checkout-info-commit-table .info-th span{
+    position: relative;
+    top:6px;
+    font-size:16px;
+    font-weight: bold;
+}
+#checkout-info-commit-table .row{
+    border-bottom:1px #808A87 solid;
+}
+#checkout-info-commit-table .row:last-child{
+    border-bottom:0px #808A87 solid;
+}
+
+#checkout-commit-button{
+    float: right;
+    width:150px;
+}
+
+
+@media  (max-width: 1199.98px){
+
+
+}
+
+
+@media  (max-width: 991.98px){
+
+
+}
+
+
+@media  (max-width: 767.98px) {
+
+
+
+}
+
+
+@media  (max-width: 575.98px){
+
+
+    #checkout-info-commit-table div.content-row{
+        position: relative;
+        height:70px;
+    }
+
+    #checkout-info-commit-table .info-th{
+        position: absolute;
+        left:10px;
+        top:3px;
+        height:30px;
+    }
+    #checkout-info-commit-table .info-td{
+        position: absolute;
+        left:10px;
+        top:32px;
+        height:30px;
+    }
+
+
+    #checkout-commit-button{
+        float: none;
+        position: relative;
+        width:90%;
+        left:5%;
+    }
+
+}

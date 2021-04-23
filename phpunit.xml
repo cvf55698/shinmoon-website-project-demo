@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit colors="true" bootstrap="tests/bootstrap.php" 
+    stderr="false" 
+    processIsolation="true"    
+>
+    <testsuites>
+        <testsuite name="Shinmoon Project">
+            <directory>tests/Service</directory>
+            <directory>tests/Controller/member</directory>
+            <directory>tests/Controller/product</directory>
+            <directory>tests/Controller/cart</directory>
+            <directory>tests/Controller/order</directory>
+        </testsuite>
+    </testsuites>
+    <filter>
+        <whitelist>
+            <directory suffix=".php">app/</directory>
+        </whitelist>
+    </filter>
+    <php>
+        <ini name="date.timezone" value="Asia/Taipei"/>
+        <const name="PHPUNIT_TEST" value="TRUE"/>
+    </php>
+</phpunit>

@@ -1,0 +1,43 @@
+
+
+
+#back-cart-button{
+    width:200px;font-size: 17px;float: left;
+}
+#go-on-checkout-button{
+    width:200px;font-size: 17px;float: right;
+}
+
+@media  (max-width: 1199.98px){
+
+
+}
+
+
+@media  (max-width: 991.98px){
+
+
+}
+
+
+@media  (max-width: 767.98px) {
+
+
+
+}
+
+
+@media  (max-width: 575.98px){
+
+
+    #back-cart-button{
+        width:90%;position: relative;left:5%;
+        float: none;
+        margin-top: 5px;margin-bottom: 10px;
+    }
+    #go-on-checkout-button{
+        width:90%;position: relative;left:5%;
+        float: none;
+        margin-top: 10px;margin-bottom: 5px;
+    }
+}
