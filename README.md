@@ -172,9 +172,3 @@ composer test
      - 先利用 **select id from member where id=1 for update** 指令
 	 - 鎖定對應到該會員的資料行
  
- - 確保商品庫存不會為負，防止超賣
-   - 在交易隔離層級 **Repeatable Read** ，個別執行中的事務，無法取得當下該筆 product 資料行的最新資料，即便其他事務執行 Commit 提交事務
-    - 會先利用 **update** 指令，更新該筆 product 資料行的庫存，減掉該會員此筆交易的商品購買數量
-	- 此時會觸發 **幻讀 (Phantom reads)**，取該筆 product 最新資料，庫存扣掉購買數量
-    - 執行完 **update** 指令，再執行 **select** 指令，若發現該筆 product 庫存數量已經小於 0，代表庫存不夠銷售，此時就讓這筆交易 **rollback**，取消使用者的訂單送出動作
-    
